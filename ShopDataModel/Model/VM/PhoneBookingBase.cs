@@ -29,6 +29,6 @@ namespace ShopDataModel.Model.VM
         [Required]
         public PaymentMethod TypeofPayment { get; set; }
        
-        public DateTimeOffset AvailableDateForCollection { get; set; }
+        public DateTime AvailableDateForCollection { get; set; }
     }
 }

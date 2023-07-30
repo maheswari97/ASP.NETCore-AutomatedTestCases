@@ -32,24 +32,27 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Book([Bind("FirstName,FirstName,Email,AvailableDateForCollection,TypeofPayment,PhoneId,BookingId")] PhoneBooking booking)
+        public IActionResult Book([FromForm] PhoneBooking booking)
         {
             IActionResult actionResult = View("Book");
 
             if (ModelState.IsValid)
             {
                 var result = _phoneBookingService.OrderPhone(booking);
+
+                //return Ok(result);
                 if (result.Code == BookingCode.Success)
                 {
-                    actionResult = RedirectToAction("BookingConfirmation", result);
+                    return Ok(result);
                 }
                 else if (result.Code == BookingCode.NoPhoneAvailable)
                 {
-                    ViewData["Error"] = "No Stock available for selected Phone";
+                    return BadRequest("No Stock available for selected Phone");
                 }
             }
 
-            return actionResult;
+            var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
+            return BadRequest(errors);
         }
 
         public IActionResult BookingConfirmation(BookingResult result)

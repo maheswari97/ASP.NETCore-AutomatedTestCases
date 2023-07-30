@@ -1,5 +1,5 @@
 ﻿angular.module('myApp', ['ngMaterial'])
-    .controller('myController', function ($scope, $http) {
+    .controller('myController', function ($scope, $http, $window) {
        
         console.log('Your UUID is: ' + uuidv4());
         $scope.booking = {}; // Initialize the booking object to store form data
@@ -13,7 +13,7 @@
                     $scope.dropdownItems = response.data;
                 }, function (error) {
                     // Handle error if needed
-                    console.error(error);
+                    
                 });
         }
 
@@ -33,24 +33,29 @@
             // Perform any client-side validation here if needed
             // ...
             $scope.booking.BookingId = uuidv4();
-            $scope.booking.PhoneId = null;
-            $scope.booking.DeliveryAddress = null;
+            $scope.booking.AvailableDateForCollection = $scope.booking.AvailableDateForCollection.toISOString();
             // Post the data to the server using $http
-            $http.post('/Booking/Book', JSON.stringify($scope.booking), {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+            $http( {
+                method: 'POST',
+                url: '/Booking/Book',
+                data: $.param($scope.booking),
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
                 })
                 .then(function (response) {
                     // Handle success response if needed
+                    if (response.data.code==0) {
+                        // Perform the client-side redirect
+                        var queryParams = $.param(response.data);
+                        $window.location.href = "BookingConfirmation?" + queryParams;
+                    }
                     console.log(response.data);
                 }, function (error) {
                     // Handle error response if needed
-                    console.error(error.data);
+                    
 
                     // Set the errors object based on the server's validation response
-                    if (error.data && error.data.errors) {
-                        $scope.errors = error.data.errors;
+                    if (error.data ) {
+                        $scope.errors = error.data;
                     }
                 });
         };

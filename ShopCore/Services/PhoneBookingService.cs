@@ -40,7 +40,7 @@ namespace ShopCore.Services
                 TypeofPayment = request.TypeofPayment
             };
 
-            List<Guid?> reservedPhone=_phoneBookingRepository.GetAll().Where(x=>x.PhoneId==request.PhoneId).Select(x=>x.PhoneId).ToList();
+            List<Guid> reservedPhone=_phoneBookingRepository.GetAll().Where(x=>x.PhoneId==request.PhoneId).Select(x=>x.PhoneId).ToList();
 
             bool isAvaliable = !reservedPhone.Contains(request.PhoneId);
             if(isAvaliable)

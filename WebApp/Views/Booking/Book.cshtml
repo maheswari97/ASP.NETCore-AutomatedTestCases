@@ -41,7 +41,7 @@
     </div>
      <div class="form-group">
         <label for="PhoneId" class="control-label">Select Phone Type:</label>
-            <select ng-model="sss" class="form-control">
+            <select ng-model="booking.PhoneId" class="form-control">
                 <option ng-repeat="item in dropdownItems" value="{{item.id}}">{{item.phoneModel}}</option>
             </select>
 
@@ -57,14 +57,12 @@
             <span class="text-danger" ng-show="errors.TypeofPayment">{{errors.TypeofPayment}}</span>
     </div>
 
-        @if (!string.IsNullOrEmpty((string)ViewData["Error"]))
-        {
-            <p class="text-danger">
-                @ViewData["Error"]
-            </p>
-        }
-        <br />
+       
    <button type="submit" class="btn btn-primary">BOOK</button>
+
+        <div ng-show="errors.length>1">
+            <h3 color: red; class="display-4">{{errors}}</h3>
+   </div>
 
 </form>
 

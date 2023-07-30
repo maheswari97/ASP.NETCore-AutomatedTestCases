@@ -13,7 +13,7 @@ namespace ShopDataModel.Model
     {
         [Key]
         public Guid BookingId { get; set; }
-        public Guid? PhoneId { get; set; }
+        public Guid PhoneId { get; set; }
 
     }
 }
