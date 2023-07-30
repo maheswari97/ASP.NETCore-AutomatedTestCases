@@ -1,0 +1,17 @@
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\bin\Debug\net6.0\ShopCore.deps.json
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\bin\Debug\net6.0\ShopCore.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\bin\Debug\net6.0\ShopCore.pdb
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\bin\Debug\net6.0\ShopDataAccess.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\bin\Debug\net6.0\ShopDataModel.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\bin\Debug\net6.0\ShopDataAccess.pdb
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\bin\Debug\net6.0\ShopDataModel.pdb
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.csproj.AssemblyReference.cache
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.AssemblyInfoInputs.cache
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.AssemblyInfo.cs
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.csproj.CoreCompileInputs.cache
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.csproj.CopyComplete
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\refint\ShopCore.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ShopCore.pdb
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopCore\obj\Debug\net6.0\ref\ShopCore.dll

@@ -1,0 +1,82 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+<!-- Include AngularJS Material library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+
+<!-- Include CSS for Angular Material -->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+
+<div ng-app="myApp" ng-controller="myController">
+<h1 class="display-4">Book Phone</h1>
+
+
+    <form ng-submit="submitForm()" method="post">
+
+    <div class="form-group">
+        <label for="FirstName" class="control-label">FirstName</label>
+            <input ng-model="booking.FirstName" id="FirstName" name="FirstName" class="form-control">
+            <span class="text-danger">{{errors.FirstName}}</span>
+    </div>
+
+    <div class="form-group">
+            <label for="LastName" class="control-label">LastName</label>
+            <input ng-model="booking.LastName" id="LastName" name="LastName" class="form-control">
+            <span class="text-danger">{{errors.LastName}}</span>
+    </div>
+
+    <div class="form-group">
+            <label for="Email" class="control-label">Email</label>
+            <input ng-model="booking.Email" id="Email" name="Email" class="form-control">
+            <span class="text-danger">{{errors.Email}}</span>
+    </div>
+
+    <div class="form-group">
+        <label for="AvailableDateForCollection" class="control-label">Available Date for Collection</label>
+        <md-datepicker ng-model="booking.AvailableDateForCollection" md-placeholder="Enter a date"></md-datepicker>
+        <span class="text-danger" ng-show="errors.AvailableDateForCollection">{{errors.AvailableDateForCollection}}</span>
+    </div>
+     <div class="form-group">
+        <label for="PhoneId" class="control-label">Select Phone Type:</label>
+            <select ng-model="sss" class="form-control">
+                <option ng-repeat="item in dropdownItems" value="{{item.id}}">{{item.phoneModel}}</option>
+            </select>
+
+            <span class="text-danger" ng-show="errors.PhoneId">{{errors.PhoneId}}</span>
+    </div>
+
+    <div class="form-group">
+        <label for="TypeofPayment" class="control-label">Select Payment Type:</label>
+            <select ng-model="booking.TypeofPayment" class="form-control">
+                <option ng-repeat="item in paymentmethod" value="{{item}}">{{item}}</option>
+            </select>
+
+            <span class="text-danger" ng-show="errors.TypeofPayment">{{errors.TypeofPayment}}</span>
+    </div>
+
+        @if (!string.IsNullOrEmpty((string)ViewData["Error"]))
+        {
+            <p class="text-danger">
+                @ViewData["Error"]
+            </p>
+        }
+        <br />
+   <button type="submit" class="btn btn-primary">BOOK</button>
+
+</form>
+
+@section Scripts{
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+</div>
+<script>
+    // Serialize enum values to a JavaScript variable from the server-side
+    var paymentMethods = @Html.Raw(Json.Serialize(Enum.GetNames(typeof(ShopDataModel.Model.VM.PaymentMethod))));
+</script>
+<script src="../Scripts/book.js"></script>

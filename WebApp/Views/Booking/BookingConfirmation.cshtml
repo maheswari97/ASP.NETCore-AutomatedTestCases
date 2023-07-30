@@ -1,0 +1,20 @@
+﻿@model ShopDataModel.Model.VM.BookingResult
+ 
+<h1 class="display-4">Order is Success</h1>
+<p class="lead">
+    Thank You For Shopping with us!
+</p>
+<p>
+    Hi @Model.FirstName,
+</p>
+<p>
+    Booking is successful, Please collect your phone
+    on <strong>@Model.AvailableDateForCollection.DateTime.ToShortDateString()</strong>.<br />
+    Your booking number is <strong>@Model.BookingId</strong>.<br />
+    
+</p>
+
+
+<div>
+    <a class="btn-primary btn" style="margin-top: 25px"  asp-action="Book">Book another Study Room</a>
+</div>

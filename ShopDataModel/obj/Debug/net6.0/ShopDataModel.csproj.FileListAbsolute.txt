@@ -1,0 +1,12 @@
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\bin\Debug\net6.0\ShopDataModel.deps.json
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\bin\Debug\net6.0\ShopDataModel.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\bin\Debug\net6.0\ShopDataModel.pdb
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ShopDataModel.csproj.AssemblyReference.cache
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ShopDataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ShopDataModel.AssemblyInfoInputs.cache
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ShopDataModel.AssemblyInfo.cs
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ShopDataModel.csproj.CoreCompileInputs.cache
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ShopDataModel.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\refint\ShopDataModel.dll
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ShopDataModel.pdb
+D:\Maheswari Docs\.Net project\PhonesRetailShopSolution\ShopDataModel\obj\Debug\net6.0\ref\ShopDataModel.dll

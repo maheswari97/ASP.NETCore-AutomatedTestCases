@@ -1,0 +1,30 @@
+﻿@model IEnumerable<ShopDataModel.Model.PhoneBooking>
+<h1 class="display-4">Phone Bookings</h1>
+
+<hr />
+
+<table class="table table-striped table-bordered dt-responsive nowrap">
+    <thead class="thead-light">
+        <tr>
+            <th>Collection/Delivery Date</th>
+            <th>Booking Id</th>
+            <th>Phone ID</th>
+            <th>Email</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.AvailableDateForCollection.DateTime.ToShortDateString()</td>
+                <td>@booking.BookingId</td>
+                <td>@booking.PhoneId</td>
+                <td>@booking.Email</td>
+                <td>@booking.FirstName</td>
+                <td>@booking.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
