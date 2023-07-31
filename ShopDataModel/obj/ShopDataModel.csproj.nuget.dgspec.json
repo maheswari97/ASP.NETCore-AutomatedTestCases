@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopDataModel\\ShopDataModel.csproj": {}
+    "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopDataModel\\ShopDataModel.csproj": {}
   },
   "projects": {
-    "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopDataModel\\ShopDataModel.csproj": {
+    "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopDataModel\\ShopDataModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopDataModel\\ShopDataModel.csproj",
+        "projectUniqueName": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopDataModel\\ShopDataModel.csproj",
         "projectName": "ShopDataModel",
-        "projectPath": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopDataModel\\ShopDataModel.csproj",
+        "projectPath": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopDataModel\\ShopDataModel.csproj",
         "packagesPath": "C:\\Users\\balaj\\.nuget\\packages\\",
-        "outputPath": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopDataModel\\obj\\",
+        "outputPath": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopDataModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

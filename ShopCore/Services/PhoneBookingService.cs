@@ -1,4 +1,5 @@
 ﻿using ShopCore.Services.IServices;
+using ShopDataAccess.Repository;
 using ShopDataAccess.Repository.IRepository;
 using ShopDataModel.Model;
 using ShopDataModel.Model.VM;
@@ -13,11 +14,13 @@ namespace ShopCore.Services
     public class PhoneBookingService : IPhoneBookingService
     {
         private readonly IPhoneBookingRepository _phoneBookingRepository;
+        private readonly IPhoneListRepository _phoneListRepository;
 
-        public PhoneBookingService(IPhoneBookingRepository phoneBookingRepository)
+        public PhoneBookingService(IPhoneBookingRepository phoneBookingRepository, 
+                                   IPhoneListRepository phoneListRepository)
         {
             _phoneBookingRepository = phoneBookingRepository;
-           
+            _phoneListRepository = phoneListRepository;
         }
         public IEnumerable<PhoneBooking> GetAllBooking()
         {
@@ -40,11 +43,14 @@ namespace ShopCore.Services
                 TypeofPayment = request.TypeofPayment
             };
 
-            List<Guid> reservedPhone=_phoneBookingRepository.GetAll().Where(x=>x.PhoneId==request.PhoneId).Select(x=>x.PhoneId).ToList();
-
-            bool isAvaliable = !reservedPhone.Contains(request.PhoneId);
-            if(isAvaliable)
+            PhoneList? stockAvaiable=_phoneListRepository.GetAll().Where(x=>x.Id==request.PhoneId && x.NumberOfStocks!=0).FirstOrDefault();
+         
+            if(stockAvaiable!=null)
             {
+                stockAvaiable.NumberOfStocks = stockAvaiable.NumberOfStocks - 1;
+                _phoneListRepository.update(stockAvaiable);
+
+                request.PhoneModel=stockAvaiable.PhoneModel;
                 _phoneBookingRepository.Book(request);
                 result.BookingId= request.BookingId;
                 result.Code = BookingCode.Success;

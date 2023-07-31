@@ -21,7 +21,9 @@ namespace ShopDataAccess
                 {
                     Id = Guid.NewGuid(),
                     PhoneModel = "IPhone114pro",
-                    PhonePrice = 1000
+                    PhonePrice = 1000,
+                    NumberOfStocks=3
+
                 }
             );
             modelBuilder.Entity<PhoneList>().HasData(
@@ -29,7 +31,9 @@ namespace ShopDataAccess
                 {
                     Id = Guid.NewGuid(),
                     PhoneModel = "SmasungGalaxys11",
-                    PhonePrice = 1500
+                    PhonePrice = 1500,
+                    NumberOfStocks=2
+
                 }
             );
             modelBuilder.Entity<PhoneList>().HasData(
@@ -37,7 +41,8 @@ namespace ShopDataAccess
                 {
                     Id = Guid.NewGuid(),
                     PhoneModel = "RedmiNote12pro",
-                    PhonePrice = 400
+                    PhonePrice = 400,
+                    NumberOfStocks=4
                 }
             );
             modelBuilder.Entity<PhoneList>().HasData(
@@ -45,7 +50,8 @@ namespace ShopDataAccess
               {
                   Id = Guid.NewGuid(),
                   PhoneModel = "Iphone13promax",
-                  PhonePrice = 1300
+                  PhonePrice = 1300,
+                  NumberOfStocks=1
               }
           );
         }

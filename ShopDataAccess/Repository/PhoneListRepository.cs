@@ -21,5 +21,11 @@ namespace ShopDataAccess.Repository
         {
             return _context.PhoneLists.ToList();
         }
+
+        public void update(PhoneList phone)
+        {
+            _context.PhoneLists.Update(phone);
+            _context.SaveChanges();
+        }
     }
 }

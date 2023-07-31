@@ -53,6 +53,9 @@ namespace ShopDataAccess.Migrations
                     b.Property<Guid>("PhoneId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("PhoneModel")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("TypeofPayment")
                         .HasColumnType("int");
 
@@ -67,6 +70,9 @@ namespace ShopDataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("NumberOfStocks")
+                        .HasColumnType("int");
+
                     b.Property<string>("PhoneModel")
                         .HasColumnType("nvarchar(max)");
 
@@ -80,25 +86,29 @@ namespace ShopDataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8e0748d1-bbea-465a-b09d-068d651f5bf6"),
+                            Id = new Guid("f4b8d672-bc70-43ac-af2b-3e461c58f40a"),
+                            NumberOfStocks = 3,
                             PhoneModel = "IPhone114pro",
                             PhonePrice = 1000
                         },
                         new
                         {
-                            Id = new Guid("ecc6a958-24c1-41eb-b21a-1105ec09e699"),
+                            Id = new Guid("cd580360-46b3-4560-bc55-beece60d1c55"),
+                            NumberOfStocks = 2,
                             PhoneModel = "SmasungGalaxys11",
                             PhonePrice = 1500
                         },
                         new
                         {
-                            Id = new Guid("b4664865-69cd-4404-821c-1cca69e472ee"),
+                            Id = new Guid("197f70e4-c870-4fc6-b5d4-7e4f3bdff3b5"),
+                            NumberOfStocks = 4,
                             PhoneModel = "RedmiNote12pro",
                             PhonePrice = 400
                         },
                         new
                         {
-                            Id = new Guid("b3f82ca4-5b5d-4fbd-98c1-fc61e226c5e6"),
+                            Id = new Guid("c3cbd403-f457-4dc0-971b-de00b8fb41d3"),
+                            NumberOfStocks = 1,
                             PhoneModel = "Iphone13promax",
                             PhonePrice = 1300
                         });

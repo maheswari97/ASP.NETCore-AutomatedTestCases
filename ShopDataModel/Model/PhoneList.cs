@@ -13,6 +13,8 @@ namespace ShopDataModel.Model
         public Guid Id { get; set; }
         public string? PhoneModel { get; set; }
         public int PhonePrice { get; set; }
+        public int NumberOfStocks { get; set; }
+
     }
 }
 

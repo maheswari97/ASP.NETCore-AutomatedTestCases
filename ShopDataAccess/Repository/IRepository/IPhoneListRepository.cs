@@ -10,5 +10,7 @@ namespace ShopDataAccess.Repository.IRepository
     public interface IPhoneListRepository
     {
         IEnumerable<PhoneList> GetAll();
+        void update(PhoneList phone);
+
     }
 }

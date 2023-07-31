@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n8BZYkdxZYz3ftZMKgFOs89WdwHwBA2hHPvM3rCUdVH8VCYsy9D3ov/AWwQz04ZNmf297Gh2bnY09jVLFOud+w==",
+  "dgSpecHash": "ex9chaaAoQ0uFrIjZWXzhDXrSTVlZqpaEKwrg0X7fzl8cXKv9ECRNN1l2xmSaEKxi96iUboEqnKou2H1JTlp3w==",
   "success": true,
-  "projectFilePath": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopCore\\ShopCore.csproj",
+  "projectFilePath": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopCore\\ShopCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\balaj\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\balaj\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

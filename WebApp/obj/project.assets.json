@@ -4058,11 +4058,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\WebApp\\WebApp.csproj",
+      "projectPath": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\WebApp\\WebApp.csproj",
       "packagesPath": "C:\\Users\\balaj\\.nuget\\packages\\",
-      "outputPath": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\WebApp\\obj\\",
+      "outputPath": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4084,11 +4084,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopCore\\ShopCore.csproj": {
-              "projectPath": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopCore\\ShopCore.csproj"
+            "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopCore\\ShopCore.csproj": {
+              "projectPath": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopCore\\ShopCore.csproj"
             },
-            "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopDataAccess\\ShopDataAccess.csproj": {
-              "projectPath": "D:\\Maheswari Docs\\.Net project\\PhonesRetailShopSolution\\ShopDataAccess\\ShopDataAccess.csproj"
+            "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopDataAccess\\ShopDataAccess.csproj": {
+              "projectPath": "D:\\Maheswari Docs\\GITHUB PROJECTS\\ASP.NETCore-WEBAPP-Retail-Shop-\\ShopDataAccess\\ShopDataAccess.csproj"
             }
           }
         }

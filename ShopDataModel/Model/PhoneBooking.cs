@@ -15,5 +15,6 @@ namespace ShopDataModel.Model
         public Guid BookingId { get; set; }
         public Guid PhoneId { get; set; }
 
+        public string? PhoneModel { get; set; }
     }
 }
